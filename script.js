@@ -8,8 +8,6 @@ getTextareaEmail.addEventListener('blur', switchLayout)
 getButtonSubmit.addEventListener('click', checkIfValidEmails)
 getNewDiv.addEventListener('click', returnToTheField)
 document.addEventListener('keypress', adaptContent)
-//getTextareaEmail.addEventListener('blur', returnToTheField)
-
 
 //checking and saying how many valid emails you have using the same logic as above
 function checkIfValidEmails(){

@@ -1,0 +1,103 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0px;
+    background: #6C7A89;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background: #6C7A89;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textPage{
+    position: absolute;
+    color: #050038;
+    margin-top: 37.8px;
+    margin-left: 51.4px;
+    font-size: 20px;
+}
+
+#boxMail{
+    width: 540px;
+    height: 300px;
+    border: solid #F8F8F7 1px;
+    border-radius: 7px;
+    background-color: #F8F8F7;
+}
+
+#textareaEmail{
+    width: 448px;
+    border-radius: 5px;
+    border: solid 1px #C3C2CF;
+    font-size: 15px;
+    box-sizing: border-box;
+    resize: none;
+    padding: 5px;
+}
+
+#divLayout{
+    width: 448px;
+    margin-top: 84.5px;
+    margin-left: 50.5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#buttonSubmit{
+    width: 142px;
+    height: 40px;
+    margin: 10px 355px;
+    background-color: #4262FF;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.layoutEmail{
+    color: black;
+    background-color: rgba(102, 153, 255, 0.2);
+    border-radius: 10px;
+    padding: 4px;
+    margin: 0px 0px 4px 4px;
+    display: inline-block;
+}
+
+.layoutInvalidEmail{
+    color: black;
+    margin: 0px 5px;
+    border-bottom: dashed red;
+    display: inline-block;
+}
+
+#divLayoutChanged{
+    width: 448px;
+    margin-top: 84.5px;
+    margin-left: 50.5px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: solid 1px #C3C2CF;
+    padding: 4px 0px 0px 0px;
+    box-sizing: border-box;
+}
+
+#divLayoutChanged{
+    display: none;
+}
+
+i{
+    margin: 0px 3px 0px 3px;
+}
+
+#exampleEmail{
+    font-size: 10px;
+    color: blue;
+    position: relative;
+    margin-left: 55px;
+}

@@ -121,35 +121,30 @@ function checkIfValidEmails(){
 //make the text box adapt to the content
 function adaptContent(){
 
-    //set increase of to two line
     if(getTextareaEmail.value.length > 54){
 
         getTextareaEmail.setAttribute('rows', '2')
 
     }
     
-    //set increase of to three line
     if(getTextareaEmail.value.length > 108){
 
         getTextareaEmail.setAttribute('rows', '3')
 
     }
     
-    //set increase of to four line
     if(getTextareaEmail.value.length > 164){
 
         getTextareaEmail.setAttribute('rows', '4')
 
     }
     
-    //set increase of to five line
     if(getTextareaEmail.value.length > 218){
 
         getTextareaEmail.setAttribute('rows', '5')
 
     } 
     
-    //maximum value reached
     if(getTextareaEmail.value.length > 225){
 
         getTextareaEmail.setAttribute('maxlength', '225')
@@ -178,7 +173,6 @@ function switchLayout(){
     //parameter to validate email
     let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-    //if have a ',' and ' ' in the field (example@email, )
     if(textareaValue.indexOf(',') != -1 && textareaValue.indexOf(' ') != -1){
         
         textareaValue = textareaValue.replaceAll(' ', '')
@@ -198,7 +192,6 @@ function switchLayout(){
 
         }
     
-    //separate emails by ',' (example@email, example2@email)
     } else if(textareaValue.indexOf(',') != -1){
         
         arrayEmail = textareaValue.split(',')
@@ -216,8 +209,7 @@ function switchLayout(){
             }
 
         }
-        
-    //separate emails by ' ' (example@email example2@email)    
+            
     } else if(textareaValue.indexOf(' ') != -1 ){
         
         arrayEmail = textareaValue.split(' ')
@@ -236,15 +228,12 @@ function switchLayout(){
 
         }
     
-    //check if there is only one element in the field(example@email)
     } else if(textareaValue.indexOf(' ') == -1 && textareaValue.indexOf(',') == -1){
         
-        //check if the email inside is valid
         if(textareaValue.match(pattern)){
 
             validEmails.push(textareaValue)
          
-        //if not, invalid
         } else {
 
             invalidEmails.push(textareaValue)
@@ -252,7 +241,6 @@ function switchLayout(){
         }      
     }
 
-    //if the textarea value is not empty
     if(textareaValue != ''){
 
         //add the layout for each email
@@ -304,7 +292,6 @@ document.addEventListener('keydown', function(event){
         //parameter to validate email
         let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
         
-        //if have a ',' and ' ' in the field (example@email, )
         if(textareaValue.indexOf(',') != -1 && textareaValue.indexOf(' ') != -1){
             
             textareaValue = textareaValue.replaceAll(' ', '')
@@ -324,7 +311,6 @@ document.addEventListener('keydown', function(event){
     
             }
         
-        //separate emails by ',' (example@email, example2@email)
         } else if(textareaValue.indexOf(',') != -1){
             
             arrayEmail = textareaValue.split(',')
@@ -342,8 +328,7 @@ document.addEventListener('keydown', function(event){
                 }
     
             }
-            
-        //separate emails by ' ' (example@email example2@email)    
+               
         } else if(textareaValue.indexOf(' ') != -1 ){
             
             arrayEmail = textareaValue.split(' ')
@@ -362,15 +347,12 @@ document.addEventListener('keydown', function(event){
     
             }
         
-        //check if there is only one element in the field(example@email)
         } else if(textareaValue.indexOf(' ') == -1 && textareaValue.indexOf(',') == -1){
             
-            //check if the email inside is valid
             if(textareaValue.match(pattern)){
 
                 validEmails.push(textareaValue)
              
-            //if not, invalid
             } else {
 
                 invalidEmails.push(textareaValue)
@@ -378,7 +360,6 @@ document.addEventListener('keydown', function(event){
             }     
         }
 
-        //if the textarea value is not empty
         if(textareaValue != ''){
 
             //add the layout for each email
